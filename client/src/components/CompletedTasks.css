@@ -1,0 +1,203 @@
+/* CompletedTasks.css */
+.volunteer-contributions-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.volunteer-contributions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.volunteer-title {
+  color: #1e40af;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.volunteer-back-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.volunteer-back-btn:hover {
+  background-color: #1e40af;
+}
+
+.volunteer-contributions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.volunteer-contribution-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.volunteer-contribution-card:hover {
+  transform: translateY(-2px);
+}
+
+.volunteer-survey-card .volunteer-card-header {
+  background-color: #93c5fd;
+}
+
+.volunteer-camp-card .volunteer-card-header {
+  background-color: #a7f3d0;
+}
+
+.volunteer-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.volunteer-work-title {
+  color: #1e40af;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.volunteer-category-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+}
+
+.volunteer-survey-tag {
+  background-color: #4f46e5;
+}
+
+.volunteer-camp-tag {
+  background-color: #059669;
+}
+
+.volunteer-card-body {
+  padding: 1.5rem;
+}
+
+.volunteer-work-description {
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.volunteer-metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 4px;
+}
+
+.volunteer-metadata-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer-metadata-label {
+  font-weight: 600;
+  color: #2563eb;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.volunteer-metadata-value {
+  color: #334155;
+}
+
+.volunteer-responses-section {
+  margin-top: 1.5rem;
+}
+
+.volunteer-responses-title {
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.volunteer-responses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.volunteer-response-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.volunteer-response-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.volunteer-response-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.volunteer-response-key {
+  color: #475569;
+  text-transform: capitalize;
+}
+
+.volunteer-response-value {
+  color: #334155;
+}
+
+.volunteer-empty-state {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+}
+
+.volunteer-empty-message {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.volunteer-cta-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.volunteer-cta-btn:hover {
+  background-color: #1e40af;
+}
+
+.volunteer-loading {
+  text-align: center;
+  padding: 3rem;
+  color: #2563eb;
+}

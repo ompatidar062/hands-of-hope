@@ -1,0 +1,245 @@
+.htp-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.htp-intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.htp-intro h2 {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #007bff;
+}
+
+.htp-intro p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Confirmation Box */
+.htp-confirmation-box {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.htp-confirmation-box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.htp-start-btn, .htp-cancel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 180px;
+  text-align: center;
+}
+
+.htp-start-btn {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+.htp-cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.htp-start-btn:hover {
+  background-color: #218838;
+}
+
+.htp-cancel-btn:hover {
+  background-color: #c82333;
+}
+
+/* Task Selection */
+.htp-task-selection {
+  margin-top: 20px;
+}
+
+.htp-task-selection h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  color: #17a2b8;
+  margin-bottom: 12px;
+}
+
+.htp-task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.htp-task-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 2px solid transparent;
+}
+
+.htp-task-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.htp-active {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #0056b3;
+}
+
+/* Task Completion */
+.htp-task-confirmation {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.htp-task-confirmation p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Completed Tasks */
+.htp-completed-tasks {
+  margin-top: 20px;
+  background: #e9f7ef; /* Soft green background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #28a745; /* Green highlight on the left */
+}
+.htp-complete-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.htp-complete-btn:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+.htp-completed-tasks h4 {
+  font-size: 18px;
+  color: #218838;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.htp-completed-tasks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.htp-completed-tasks li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 6px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #333;
+  border-left: 4px solid #28a745;
+}
+
+.htp-task-check {
+  color: #28a745;
+  font-size: 18px;
+}
+
+/* Submit Button */
+.htp-submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.htp-submit-btn:hover {
+  background-color: #218838;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .htp-task-btn {
+    font-size: 14px;
+  }
+
+  .htp-task-selection h3 {
+    font-size: 18px;
+  }
+
+  .htp-task-confirmation p {
+    font-size: 14px;
+  }
+
+  .htp-completed-tasks h4 {
+    font-size: 16px;
+  }
+}

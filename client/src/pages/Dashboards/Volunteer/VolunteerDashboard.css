@@ -1,0 +1,186 @@
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #ff9800, #e65100);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome-section h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .welcome-section p {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  
+  /* Opportunities Section */
+  .opportunities-section {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .opportunities-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  /* Grid for Opportunities */
+  .opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  /* Opportunity Cards */
+  .opportunity-card {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .opportunity-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .opportunity-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+  
+  /* View Button */
+  .view-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .view-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Find More Opportunities */
+  .center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .find-more-button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .find-more-button:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+  }
+  
+ /* Task Row (Active & Completed in one line) */
+.task-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    max-width: 600px;
+  }
+  
+  /* Task Sections with Gradient Background */
+  .task-section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f5f7fa, #e3eaf3); /* Soft gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Hover Effect for Task Sections */
+  .task-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Task Section Headers */
+  .task-section h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5); /* Light transparency */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Progress Button */
+  .progress-button {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .progress-button:hover {
+    background: #1976d2;
+    transform: scale(1.05);
+  }
+  
+  /* Icons */
+  .icon {
+    font-size: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .opportunities-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .task-row {
+      flex-direction: column;
+    }
+  }
+  

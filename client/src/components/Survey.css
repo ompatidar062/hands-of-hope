@@ -1,0 +1,190 @@
+/* 🌿 Overall Page Styling */
+.survey-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    background: #F8F9FA; /* Soft background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    color: #222;
+  }
+  
+  /* 📋 Survey Header */
+  .survey-intro h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #008C76; /* Teal for emphasis */
+  }
+  
+  .survey-intro p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .survey-form {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  /* ✅ Confirmation Box */
+  .confirmation-box {
+    text-align: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* 🎨 Buttons */
+  .start-btn, .cancel-btn, .submit-btn {
+    padding: 12px 18px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .start-btn {
+    background-color: #00A676; /* Green */
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #D72638; /* Red */
+    color: white;
+  }
+  
+  .submit-btn {
+    background-color: #007BFF; /* Blue */
+    color: white;
+  }
+  .remove-btn {
+    background: #F56565;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .start-btn:hover, .cancel-btn:hover, .submit-btn:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+  
+  /* 📝 Form Fields */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 5px;
+  }
+  
+  /* 🎯 Fix: Better Spacing Between Age & Gender */
+  .form-group-row {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .form-group-row .form-group {
+    flex: 1;
+  }
+  
+  /* 🎯 Inputs & Dropdowns */
+  input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    border-color: #008C76;
+    outline: none;
+  }
+  /* Survey Counter Styles */
+.survey-counter {
+  background: #f0f4f8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.survey-counter h3 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.remaining {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+/* Progress Emphasis */
+.survey-counter .completed {
+  color: #2f855a;
+  font-weight: bold;
+}
+.reset-btn {
+  background: #dc3545;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #bb2d3b;
+  transform: scale(1.03);
+}
+
+.reset-btn:active {
+  transform: scale(0.98);
+}
+  /* 📱 Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .form-group-row {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  

@@ -6,6 +6,8 @@ const connectDB = require("./config/db.js");
 const authRoutes = require("./routes/authRoutes.js"); // ✅ Fix import
 const dashboardRoutes = require("./routes/dashboardRoutes.js"); // ✅ Fix import
 const { sanitizeMiddleware } = require("./middleware/sanitizeMiddleware.js"); // ✅ Fix import
+const volunteerRoutes = require("./routes/volunteerRoutes.js");
+
 
 dotenv.config();
 const app = express();
@@ -25,6 +27,7 @@ app.use(sanitizeMiddleware); // Sanitize all incoming requests
 // ✅ Routes
 app.use("/api/users", authRoutes);
 app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/volunteer", volunteerRoutes);
 
 // ✅ Start Server After Connecting to DB
 const PORT = process.env.PORT || 5000;
@@ -35,3 +38,6 @@ connectDB()
   .catch((error) => {
     console.error("Database connection failed:", error);
   });
+
+
+  

@@ -50,8 +50,9 @@ const SignIn = () => {
       if (response.ok) {
         setMessage("✅ Login successful! Redirecting...");
         const role = data.user?.role;
-        console.log(role)
-  
+        localStorage.setItem("userName", data.user.name);
+        localStorage.setItem("role", data.user.role);
+        localStorage.setItem("email", data.user.email);
         if (role) {
           setTimeout(() => {
             if (role === "healthcare") navigate("/dashboard/healthcare");

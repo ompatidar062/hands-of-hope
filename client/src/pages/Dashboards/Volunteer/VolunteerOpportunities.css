@@ -1,0 +1,156 @@
+/* General Styles */
+.volunteer-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.volunteer-header {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #3f51b5, #1a237e);
+    color: white;
+    border-radius: 10px;
+}
+
+.volunteer-header h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.volunteer-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Category Tabs */
+.category-tabs {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll on mobile */
+    white-space: nowrap;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin: 25px 0 20px 0; /* ⬅️ Increased top margin for better spacing */
+}
+
+.category-tab {
+    background: #eeeeee;
+    border: none;
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    flex: 1;
+    min-width: max-content;
+}
+
+.category-tab.active {
+    background: #3f51b5;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(63, 81, 181, 0.3);
+}
+
+.category-tab:hover {
+    background: #303f9f;
+    color: white;
+}
+
+/* Opportunity List */
+.opportunity-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Opportunity Cards */
+.opportunity-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.opportunity-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.icon {
+    font-size: 16px;
+    color: #3f51b5;
+    margin-right: 5px;
+}
+
+.view-button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.view-button:hover {
+    background: #e65100;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+    .volunteer-container {
+        padding: 15px;
+    }
+
+    .volunteer-header {
+        padding: 20px;
+    }
+
+    .volunteer-header h1 {
+        font-size: 20px;
+    }
+
+    /* Category Tabs: Enable smooth horizontal scrolling */
+    .category-tabs {
+        display: flex;
+        padding: 12px 16px;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 5px;
+        padding-bottom: 10px;
+        margin: 20px 0 15px 0; /* ⬅️ Adjusted spacing for mobile */
+    }
+
+    .category-tab {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    /* Make opportunity cards full width on mobile */
+    .opportunity-list {
+        grid-template-columns: 1fr; /* One column layout */
+    }
+
+    .opportunity-card {
+        padding: 15px;
+    }
+
+    .view-button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}

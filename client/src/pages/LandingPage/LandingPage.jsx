@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState,useRef} from "react";
+import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 import LandingPageAboutUs from "../../assets/LandingPageAboutUs.jpg"
 import { FaHandHoldingMedical, FaGraduationCap, FaUsers, FaDonate } from "react-icons/fa";
@@ -19,6 +20,7 @@ const LandingPage = () => {
             "Medical Supplies → Track and distribute medicines & equipment.",
           ],
           bestFor: "Patients, NGOs, healthcare volunteers.",
+          dashboard:"/dashboard/healthcare"
         },
         {
           id: 2,
@@ -34,6 +36,7 @@ const LandingPage = () => {
             "Providing Access → Enroll in free or subsidized courses.",
           ],
           bestFor: "Students, teachers, NGOs in education, skill trainers.",
+          dashboard:"/dashboard/education"
         },
         {
           id: 3,
@@ -46,6 +49,7 @@ const LandingPage = () => {
             "Education Volunteers → Conduct surveys, record data & gather feedback.",
           ],
           bestFor: "Anyone wanting to volunteer in healthcare or education.",
+          dashboard:"/dashboard/volunteer"
         },
         {
           id: 4,
@@ -59,6 +63,7 @@ const LandingPage = () => {
             "Monetary Contributions → Secure payment integration for donations.",
           ],
           bestFor: "Individuals & organizations willing to donate.",
+          dashboard:"/dashboard/donor"
         },
       ];
 
@@ -132,6 +137,13 @@ const LandingPage = () => {
         console.log("Form Submitted:", formData);
         // Here, you can add form submission logic (API integration)
       };
+      const navigate = useNavigate();
+
+      const coreModulesRef = useRef(null);
+
+  const scrollToCoreModules = () => {
+    coreModulesRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
       
   return (
     <>
@@ -143,8 +155,8 @@ const LandingPage = () => {
                 Join us in making a difference by providing essential services to those in need.
             </p>
             <div className="hero-buttons">
-                <button className="btn primary-btn">Get Started</button>
-                <button className="btn secondary-btn">Learn More</button>
+                <button className="btn primary-btn" onClick={() => navigate("/signin")}>Get Started</button>
+                <button className="btn secondary-btn" onClick={scrollToCoreModules}>Learn More</button>
             </div>
             </div>
         </section>
@@ -190,7 +202,7 @@ const LandingPage = () => {
     </div>
 </section>
 
-<section className="core-modules">
+<section ref={coreModulesRef} className="core-modules">
   <h2>Core Modules Overview</h2>
   <p>Explore the key modules that make Hands of Hope a powerful solution.</p>
 
@@ -218,7 +230,7 @@ const LandingPage = () => {
         </p>
 
         {/* CTA Button (Aligned & Accessible) */}
-        <button className="cta-button" aria-label={`Explore ${module.title}`}>
+        <button className="cta-button" aria-label={`Explore ${module.title}`} onClick={() => navigate(module.dashboard)}>
           Explore {module.title}
         </button>
       </div>

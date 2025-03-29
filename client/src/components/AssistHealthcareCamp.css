@@ -1,0 +1,269 @@
+/* Container */
+.assist-camps-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.camp-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.camp-header h2 {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #007bff;
+}
+
+.camp-header p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Confirmation Box */
+.confirm-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.confirm-box p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Buttons */
+.confirm-btn, .cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 160px;
+    text-align: center;
+}
+
+.confirm-btn {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
+
+/* Camp Details */
+.camp-details {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.camp-details h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #17a2b8;
+    margin-bottom: 12px;
+}
+
+.camp-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.camp-details li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Task Buttons */
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.task-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background: white;
+    color: #007bff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+.task-btn.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Task Completion */
+.task-confirmation {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.complete-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.complete-btn:hover {
+    background: #218838;
+}
+
+/* Completed Tasks */
+.completed-tasks {
+    margin-top: 20px;
+  background: #e9f7ef; /* Soft green background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #28a745; /* Green highlight on the left */
+}
+
+.completed-tasks h4 {
+    font-size: 18px;
+  color: #218838;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.completed-tasks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.completed-tasks li {
+    display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 6px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #333;
+  border-left: 4px solid #28a745;
+}
+
+.submit-btn {
+    background-color: #28a745;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Icons */
+.icon {
+    color: #007bff;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .camp-header h2 {
+        font-size: 20px;
+    }
+
+    .confirm-box {
+        padding: 10px;
+    }
+
+    .confirm-btn, .cancel-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .camp-details {
+        padding: 15px;
+    }
+
+    .camp-details h3 {
+        font-size: 18px;
+    }
+
+    .camp-details li {
+        font-size: 14px;
+    }
+
+    .task-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
